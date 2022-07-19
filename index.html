@@ -4,103 +4,192 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/54a9dfe718.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>Propuesta Educativa</title>
   </head>
   <body>
-    <header></header>
-    <main>
-      
-      <section>
-        <!-- 1 seccion (foto, titulo, p) -->
-        <div class="sec1">
-          <div class="cajaFoto"><img id="mujeroficina" src="./assets/fotosec1.jpg" alt="mujeroficina"></div>
-          <h2 class="h2sec1">Perspectiva Educativa</h2>
-          <h2 class="h2sec1">Digital XXI</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem et dolorum vero eius. Dolorum, quisquam voluptatem alias distinctio amet totam nam eum adipisci temporibus. Delectus laborum temporibus vel doloremque reprehenderit?</p>
-        </div>
-
-      </section>
-      <section>
-        <!--  seccion 2 (4 parrafos separados cons sus titulos )-->
-        <div>
+    <div class="containerGral">
+      <header>
+        <img
+          class="imgLogoNav"
+          src="./assets/logoperspectivaeducativa.png"
+          alt="Logo"
+        />
+        <span class="navHamb" id="btnMenu"><i class="fa fa-bars"></i></span>
+        <nav>
+          <ul id="menu">
+            <li class="itemLink"><a href="#">Acerca de</a></li>
+            <li class="itemLink"><a href="#">Mentorias</a></li>
+            <li class="itemLink"><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="presentationSection">
+          <!-- 1 seccion (foto, titulo, p) -->
+          <picture>
+            <img
+              class="presentationImg"
+              src="./assets/fotosec1.jpg"
+              alt="mujeroficina"
+            />
+          </picture>
+          <h2 class="txtPrespEduc">Perspectiva<br />Educativa</h2>
+          <h2 class="txtDigital">Digital XXI</h2>
+          <p class="txtPresentation">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+            enim accusantium sunt possimus minima quis. Veniam optio incidunt
+            explicabo qui.
+          </p>
+        </section>
+        <section class="resumeSection">
+          <!--  seccion 2 (4 parrafos separados cons sus titulos )-->
+          <div class="resSection">
+            <h4 class="titResumeSection">100% Dinamicas</h4>
+            <p class="txtResumeSection">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              voluptatem sed architecto quis repellendus. Numquam!
+            </p>
+          </div>
+          <div class="resSection">
+            <h4 class="titResumeSection">+1 Mentorias</h4>
+            <p class="txtResumeSection">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              voluptatem sed architecto quis repellendus. Numquam!
+            </p>
+          </div>
+          <div class="resSection">
+            <h4 class="titResumeSection">100% Virtuales</h4>
+            <p class="txtResumeSection">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              voluptatem sed architecto quis repellendus. Numquam!
+            </p>
+          </div>
+          <div class="resSection">
+            <h4 class="titResumeSection">100% Flexibles</h4>
+            <p class="txtResumeSection">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              voluptatem sed architecto quis repellendus. Numquam!
+            </p>
+          </div>
+        </section>
+        <section class="abputUsSection">
+          <!-- seccion 3 (foto, titulo, p) -->
+          <picture>
+            <img
+              class="aboutUsImg"
+              src="./assets/mujersillon.jpg"
+              alt="mujersillon"
+            />
+          </picture>
+          <h3 class="titAboutUsSection">Acerca de Perspectiva</h3>
+          <p class="txtAboutUsSection">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            saepe accusantium hic necessitatibus tempore, id numquam fugiat,
+            facere laudantium ad voluptates architecto similique nihil quia
+            excepturi iure. Vero, quidem exercitationem.
+          </p>
+        </section>
+        <section class="instWorkWith">
+          <!-- seccion 4 ( titulo , 2 img) -->
+          <h3 class="titInstWorkWith">INTITUCIONES CON LAS QUE TRABAJAMOS</h3>
+          <picture>
+            <img
+              class="logoInstWorkWith"
+              src="./assets/LogoCoder.png"
+              alt="LogoCoder"
+            />
+          </picture>
+          <picture>
+            <img
+              class="logoInstWorkWith"
+              src="./assets/LogoAprende.png"
+              alt="LogoAprende"
+            />
+          </picture>
+        </section>
+        <section class="serviceSection">
+          <!-- seccion 5 (servicios (tiutlo e imagen) y 4 parrafos con sus titulos por sep)  -->
+          <div class="encServiceSection">
+            <h3 class="titServiceSection">Servicios</h3>
+            <picture class="contimgServiceSection">
+              <img
+                class="imgServiceSection"
+                src="./assets/senoramesa.jpg"
+                alt="senoramesa"
+              />
+            </picture>
+          </div>
+          <div class="description">
+            <div class="descriptionInd">
+              <h4 class="titDescriptionInd">Memoria Grupal</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                impedit perferendis ratione excepturi atque cupiditate magni
+                vero tempore dolor doloremque!
+              </p>
+            </div>
+            <div class="descriptionInd">
+              <h4 class="titDescriptionInd">Portfolio</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                impedit perferendis ratione excepturi atque cupiditate magni
+                vero tempore dolor doloremque!
+              </p>
+            </div>
+            <div class="descriptionInd">
+              <h4 class="titDescriptionInd">Seminarios</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                impedit perferendis ratione excepturi atque cupiditate magni
+                vero tempore dolor doloremque!
+              </p>
+            </div>
+            <div class="descriptionInd">
+              <h4 class="titDescriptionInd">Capacitación Docente</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                impedit perferendis ratione excepturi atque cupiditate magni
+                vero tempore dolor doloremque!
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="contactUs">
+          <!-- seccion 6 (contacto: img titulo p form ) -->
           <div>
-            <h4>100% Dinamicas</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis libero ad vitae dolores et pariatur enim, fugit consequatur, itaque perferendis! Quae aut omnis ea libero ullam! Molestias, ipsam voluptates.</p>
+            <picture>
+              <img
+                class="imgContactUs"
+                src="./assets/jovencompu.jpg"
+                alt="jovencompu"
+              />
+            </picture>
+            <h2>Comunicate<br />con<br />Nosotros</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint,
+              ratione voluptatibus neque totam laudantium, culpa, rem qui
+              corrupti quam ipsam magnam corporis placeat consequatur ea
+              accusamus natus eos! Consequuntur, debitis!
+            </p>
           </div>
           <div>
-            <h4>+1 Mentorias</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis libero ad vitae dolores et pariatur enim, fugit consequatur, itaque perferendis! Quae aut omnis ea libero ullam! Molestias, ipsam voluptates.</p>
+            <form action="">
+              <input type="text" placeholder="Nombre" />
+              <input type="email" placeholder="Correo" />
+              <input type="text" placeholder="Mensaje" />
+            </form>
           </div>
-          <div>
-            <h4>100% Virtuales</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis libero ad vitae dolores et pariatur enim, fugit consequatur, itaque perferendis! Quae aut omnis ea libero ullam! Molestias, ipsam voluptates.</p>
-          </div>
-          <div>
-            <h4>100% Flexibles</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis libero ad vitae dolores et pariatur enim, fugit consequatur, itaque perferendis! Quae aut omnis ea libero ullam! Molestias, ipsam voluptates.</p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <!-- seccion 3 (foto, titulo, p) -->
-        <div>
-          <div class="cajaFoto"><img id="mujersillon" src="./assets/mujersillon.jpg" alt="mujersillon"></div>
-          <h3>Acerca de Perspectiva</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, saepe accusantium hic necessitatibus tempore, id numquam fugiat, facere laudantium ad voluptates architecto similique nihil quia excepturi iure. Vero, quidem exercitationem.</p>
-        </div>
-      </section>
-      <section>
-        <!-- seccion 4 ( titulo , 2 img) -->
-        <div>
-          <h3>INTITUCIONES CON LAS QUE TRABAJAMOS</h3>
-          <div class="cajaFoto"><img id="logoCoder" src="./assets/LogoCoder.png" alt="LogoCoder"></div>
-          <div class="cajaFoto"><img id="logoAprende" src="./assets/LogoAprende.png" alt="LogoAprende"></div>
-        </div>
-      </section>
-      <section>
-        <!-- seccion 5 (servicios (tiutlo e imagen) y 4 parrafos con sus titulos por sep)  -->
-        <div>
-          <h3>Servicios</h3>
-          <div class="cajaFoto"><img id="senoraMesa" src="./assets/senoramesa.jpg" alt="senoramesa"></div>
-        </div>
-        <div>
-          <div>
-            <h4></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quasi quam vero voluptas fuga sapiente iure. Eligendi amet debitis quis exercitationem iste voluptatem, neque ut, repellendus, tempora alias facere necessitatibus!</p>
-          </div>
-          <div>
-            <h4></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quasi quam vero voluptas fuga sapiente iure. Eligendi amet debitis quis exercitationem iste voluptatem, neque ut, repellendus, tempora alias facere necessitatibus!</p>
-          </div>
-          <div>
-            <h4></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quasi quam vero voluptas fuga sapiente iure. Eligendi amet debitis quis exercitationem iste voluptatem, neque ut, repellendus, tempora alias facere necessitatibus!</p>
-          </div>
-          <div>
-            <h4></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quasi quam vero voluptas fuga sapiente iure. Eligendi amet debitis quis exercitationem iste voluptatem, neque ut, repellendus, tempora alias facere necessitatibus!</p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <!-- seccion 6 (contacto: img titulo p form ) -->
-        <div>
-          <div class="cajaFoto"><img id="jovenCompu" src="./assets/jovencompu.jpg" alt="jovencompu"></div>
-          <h2>Comunicate con Nosotros</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, ratione voluptatibus neque totam laudantium, culpa, rem qui corrupti quam ipsam magnam corporis placeat consequatur ea accusamus natus eos! Consequuntur, debitis!</p>
-        </div>
-        <div>
-          <form action="">
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo">
-            <input type="text" placeholder="Mensaje">
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <!-- logo  leyenda -->
-    </footer>
+        </section>
+      </main>
+      <footer>
+        <!-- logo  leyenda -->
+      </footer>
+    </div>
+    <script src="./menu.js"></script>
   </body>
 </html>

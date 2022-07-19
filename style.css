@@ -12,34 +12,200 @@
     font-style: normal;
     font-display: swap;
 }
-body{
+.containerGral{
+    width: 100vw;
     background-color: #000000;
     color: #FFFFFF;
 }
-.sec1{
+header{
+    background-color: #000000;
+    width: 100%;
+}
+.show{
+    transform: translateX(0);
+}
+.imgLogoNav{
+    width: 10rem;
+    padding: 1rem;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 86vh;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    position: absolute;
+    margin-right: 100%;
+    transition: all 0.5s;
+    transform: translateX(-200%);
+    z-index: 10;
+}
+li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+}
+.navHamb{
+    color: white;
+    font-size: 1.5rem;
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.presentationSection{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    padding: 1rem 1.5rem;
+}
+.presentationImg{
+    width: 100%;
+}
+.txtPrespEduc{
+    text-transform: uppercase;
+    color: #4BBFB2;
+}
+.txtDigital{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: right;
+}
+.txtPresentation{
+    padding: .5rem;
 }
 
-#mujeroficina{
-    width: 100%;
-    height: 100%;
+
+.resumeSection{
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 1rem 2rem 2rem 2rem;
 }
-#jovenCompu{
+.resSection{
+    padding: 1.5rem 1.3rem;
+    border-bottom: 1.5px solid #4BBFB2;
+}
+.titResumeSection{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 0 1rem 0;
+}
+.abputUsSection{
+    padding: 1rem 1.5rem;
+}
+.aboutUsImg{
     width: 100%;
 }
-#mujersillon{
-    width: 100%;
-    
+.titAboutUsSection{
+    text-transform: uppercase;
+    color: #4BBFB2;
+    text-align: right;
+    padding: 1rem 0;
 }
-#senoraMesa{
+/* .txtAboutUsSection{
+
+} */
+
+.instWorkWith{
+    background-color: #FFFFFF;
+    padding: 1rem 4rem;
+}
+.titInstWorkWith{
+    text-transform: uppercase;
+    color: #4BBFB2;
+    text-align: center;
+    padding: 1rem 0;
+}
+.logoInstWorkWith{
+    width: 100%;
+    padding: .5rem 0;
+}
+
+.serviceSection{
+    padding: 1rem;
+}
+.encServiceSection{
+    display: grid;
+    grid-template-columns: repeat(4, 1ft);
+    grid-template-areas: "titServiceSection imgServiceSection imgServiceSection imgServiceSection";
+}
+.titServiceSection{
+    grid-area: titServiceSection;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+    margin-left: 4.2rem;
+}
+.imgServiceSection{
+    grid-area: imgServiceSection;
     width: 100%;
 }
-#logoCoder{
+.description{
+    padding: 1rem 2rem;
+}
+.descriptionInd{
+    background-color: #FFFFFF;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    color: #000000;
+}
+.titDescriptionInd{
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+
+.contactUs{
+    background-color: #FFFFFF;
+    padding: 1rem;
+    color: #000000;
+}
+.imgContactUs{
     width: 100%;
 }
-#logoAprende{
-    width: 100%;
+
+
+
+
+
+
+/*------------------------------- RESPONSIVE -------------------------------*/
+
+@media screen and (min-width: 600px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        width: 50vw;
+        height: 5vh;
+        background-color: transparent;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        position: relative;
+        margin-right: 0;
+        transition: none;
+        transform: translateX(0);
+        z-index: 10;
+    }
+    li a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+    .navHamb{
+        visibility: hidden;
+    }
 }
