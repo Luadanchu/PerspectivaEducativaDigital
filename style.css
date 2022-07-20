@@ -170,11 +170,48 @@ li a{
 .imgContactUs{
     width: 100%;
 }
+.titContactUsSection{
+    padding: 1rem 0;
+}
+.color{
+    color: #4BBFB2;
+}
+.textContactUsSection{
+    padding-bottom: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.inputForm{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 1.5rem 0 .2rem 0;
+}
+::placeholder{
+    color: #000000;
+}
+.buttonForm{
+    margin-top: 1rem;
+    padding: .3rem;
+    width: 20%;
+}
 
 
-
-
-
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.imgLogoFooter{
+    width: 100%;
+    padding: 2rem 6rem;
+}
+.copyFooter{
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid white;
+}
 
 /*------------------------------- RESPONSIVE -------------------------------*/
 

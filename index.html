@@ -8,6 +8,11 @@
       src="https://kit.fontawesome.com/54a9dfe718.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/logoperspectivaeducativa.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Propuesta Educativa</title>
   </head>
@@ -169,8 +174,11 @@
                 alt="jovencompu"
               />
             </picture>
-            <h2>Comunicate<br />con<br />Nosotros</h2>
-            <p>
+            <div class="titContactUsSection">
+              <h2 class="txtContactUsSection">Comunicate<br />con</h2>
+              <h2 class="txtContactUsSection color">Nosotros</h2>
+            </div>
+            <p class="textContactUsSection">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint,
               ratione voluptatibus neque totam laudantium, culpa, rem qui
               corrupti quam ipsam magnam corporis placeat consequatur ea
@@ -179,15 +187,26 @@
           </div>
           <div>
             <form action="">
-              <input type="text" placeholder="Nombre" />
-              <input type="email" placeholder="Correo" />
-              <input type="text" placeholder="Mensaje" />
+              <input class="inputForm" type="text" placeholder="Nombre" />
+              <input class="inputForm" type="email" placeholder="Correo" />
+              <input class="inputForm" type="text" placeholder="Mensaje" />
+              <input class="buttonForm" type="submit" value="Enviar" />
             </form>
           </div>
         </section>
       </main>
       <footer>
         <!-- logo  leyenda -->
+        <picture
+          ><img
+            class="imgLogoFooter"
+            src="./assets/logoperspectivaeducativa.png"
+            alt="Logo"
+        /></picture>
+        <p class="copyFooter">
+          &copy; 2022 Perspectiva Educativa Digital XXI <br />
+          Todos los Derechos Reservados
+        </p>
       </footer>
     </div>
     <script src="./menu.js"></script>
