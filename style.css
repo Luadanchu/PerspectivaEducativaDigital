@@ -20,6 +20,9 @@
 header{
     background-color: #000000;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .show{
     transform: translateX(0);
@@ -40,8 +43,9 @@ ul{
     position: absolute;
     margin-right: 100%;
     transition: all 0.5s;
-    transform: translateX(-200%);
+    transform: translateX(-100%);
     z-index: 10;
+    margin-top: 3rem;
 }
 li a{
     text-decoration: none;
@@ -53,12 +57,8 @@ li a{
     font-size: 1.5rem;
     display: block;
     cursor: pointer;
+    margin-right: -4rem;
 }
-
-
-
-
-
 
 .presentationSection{
     display: flex;
@@ -73,14 +73,20 @@ li a{
 .txtPrespEduc{
     text-transform: uppercase;
     color: #4BBFB2;
+    font-family: 'Basement Grotesque';
+    margin-top: 1rem;
 }
 .txtDigital{
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: right;
+    font-family: 'Basement Grotesque';
+    margin-top: 1rem;
 }
 .txtPresentation{
     padding: .5rem;
+    font-family: 'Inconsolata', monospace ;
+    font-weight: 300;
 }
 
 
@@ -88,6 +94,7 @@ li a{
     background-color: #FFFFFF;
     color: #000000;
     padding: 1rem 2rem 2rem 2rem;
+    font-family:'Inconsolata', monospace ;
 }
 .resSection{
     padding: 1.5rem 1.3rem;
@@ -105,14 +112,19 @@ li a{
     width: 100%;
 }
 .titAboutUsSection{
+    font-family: 'Basement Grotesque';
     text-transform: uppercase;
     color: #4BBFB2;
     text-align: right;
     padding: 1rem 0;
 }
-/* .txtAboutUsSection{
-
-} */
+h3 span {
+    display: block;
+}
+.txtAboutUsSection{
+    font-family: 'Inconsolata', monospace ;
+    font-weight: 300;
+}
 
 .instWorkWith{
     background-color: #FFFFFF;
@@ -123,30 +135,35 @@ li a{
     color: #4BBFB2;
     text-align: center;
     padding: 1rem 0;
+    font-family: 'Basement Grotesque';
 }
 .logoInstWorkWith{
     width: 100%;
     padding: .5rem 0;
 }
+.titServiceSection {
+        transform: rotate(-90deg);
+        text-align: center;
+        display: block;
+        margin-top: 4rem;
+        margin-left: -2.5rem;
+        font-size: 25px;
+        font-family: 'Basement Grotesque';  
 
-.serviceSection{
-    padding: 1rem;
+      
 }
 .encServiceSection{
-    display: grid;
-    grid-template-columns: repeat(4, 1ft);
-    grid-template-areas: "titServiceSection imgServiceSection imgServiceSection imgServiceSection";
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
 }
-.titServiceSection{
-    grid-area: titServiceSection;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    transform: rotate(-90deg);
-    margin-left: 4.2rem;
+.imgServiceSection {
+    width: 115%;
+    margin-left: -2.5rem;
 }
-.imgServiceSection{
-    grid-area: imgServiceSection;
-    width: 100%;
+.serviceSection{
+    padding: 1rem;
 }
 .description{
     padding: 1rem 2rem;
@@ -156,6 +173,7 @@ li a{
     padding: 1rem 2rem;
     margin: 2rem 0;
     color: #000000;
+    font-family: 'Inconsolata', monospace ;
 }
 .titDescriptionInd{
     font-weight: 800;
@@ -172,12 +190,17 @@ li a{
 }
 .titContactUsSection{
     padding: 1rem 0;
+    font-family: 'Basement Grotesque';
+    font-size: 25px;
 }
 .color{
     color: #4BBFB2;
 }
 .textContactUsSection{
     padding-bottom: 1rem;
+    font-family: 'Inconsolata', monospace ;
+    font-weight: 400;
+    
 }
 form{
     display: flex;
@@ -187,16 +210,19 @@ form{
     border: none;
     border-bottom: 1px solid black;
     padding: 1.5rem 0 .2rem 0;
+    font-family: 'Inconsolata', monospace ;
+    font-size: 18px;
+    font-weight: 300;
 }
 ::placeholder{
     color: #000000;
 }
 .buttonForm{
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: .3rem;
     width: 20%;
+    font-family: 'Inconsolata', monospace ;
 }
-
 
 footer{
     display: flex;
@@ -211,6 +237,8 @@ footer{
     padding: 2rem;
     text-align: center;
     border-top: 1px solid white;
+    font-family: 'Inconsolata', monospace ;
+    font-weight: 300;
 }
 
 /*------------------------------- RESPONSIVE -------------------------------*/
