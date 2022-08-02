@@ -70,6 +70,9 @@ li a{
 .presentationImg{
     width: 100%;
 }
+.presentationImg2{
+    visibility: hidden;
+}
 .txtPrespEduc{
     text-transform: uppercase;
     color: #4BBFB2;
@@ -246,18 +249,30 @@ footer{
 @media screen and (min-width: 600px) {
     header{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+        width: 5vw;
+        height: 85vh;
+        position: absolute;
+    }
+    .imgLogoNav{
+        width: 7rem;
+    }
+    nav{
+        background-color: rgb(91, 91, 91); /*para diferenciar*/
+        justify-content: space-between;
         align-items: center;
+
     }
     ul{
         display: flex;
         flex-direction: row;
-        width: 50vw;
-        height: 5vh;
-        background-color: transparent;
-        justify-content: space-between;
-        align-items: center;
+        width: 5vw;
+        height: 85vh;
+        text-align: center;
+        display: block;
+        background-color: transparent;     
         list-style-type: none;
         position: relative;
         margin-right: 0;
@@ -268,9 +283,81 @@ footer{
     li a{
         text-decoration: none;
         color: #FFFFFF;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        transform: rotate(-90deg);
+        display: block;
+        position: relative;
+        margin: 50% 0;
     }
     .navHamb{
         visibility: hidden;
     }
+
+
+    
+    .presentationSection{
+        flex-direction: row;
+        justify-content: none;
+        align-content: none;
+        padding: 1rem 1.5rem;
+        margin-left: 5%;
+        height: 100vh;
+    }
+    .presentationImg{
+        width: 100%;
+    }
+    .presentationImg2{
+        visibility:visible;
+        width: 100%;
+    }
+    .txtPrespEduc{
+        text-transform: uppercase;
+        color: #4BBFB2;
+        font-family: 'Basement Grotesque';
+        margin-top: 1rem;
+    }
+    .txtDigital{
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: right;
+        font-family: 'Basement Grotesque';
+        margin-top: 1rem;
+    }
+    .txtPresentation{
+        padding: .5rem;
+        font-family: 'Inconsolata', monospace ;
+        font-weight: 300;
+    }
+
+
+    .resumeSection{
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+    }
+    .resSection{
+        padding: 2rem;
+        border-bottom: none;
+        border-right: 2px solid #4BBFB2;
+    }
+    .noBorder{
+        border: none;
+    }
+
+
+    .abputUsSection{
+        padding: 2rem;
+        margin-left: 5%;
+    }
+    .aboutUsImg{
+        width: 30%;
+    }
+    .titAboutUsSection{
+        text-align: right;
+        padding: 1rem 0;
+    }
+    h3 span {
+        display: block;
+    }
+
 }
