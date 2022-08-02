@@ -13,9 +13,19 @@
     font-display: swap;
 }
 .containerGral{
-    width: 100vw;
+    width: 100%;
     background-color: #000000;
     color: #FFFFFF;
+}
+::-webkit-scrollbar {
+    width: 0.5rem;
+    margin: 0;
+    background-color: #000000;
+}
+::-webkit-scrollbar-thumb {
+    background: #4BBFB2;
+    border-radius: 0.5rem;
+    border-right: solid #000000 1px;
 }
 header{
     background-color: #000000;
@@ -24,30 +34,27 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.show{
-    transform: translateX(0);
-}
 .imgLogoNav{
     width: 10rem;
     padding: 1rem;
 }
-ul{
+.menuHeader{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 86vh;
+    height: 90vh;
     background-color: #FFFFFF;
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
     position: absolute;
-    margin-right: 100%;
-    transition: all 0.5s;
+    margin-right: 150%;
     transform: translateX(-100%);
+    transition: all 0.5s;
     z-index: 10;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
-li a{
+.itemLink a{
     text-decoration: none;
     color: #000000;
     font-size: 2rem;
@@ -59,7 +66,11 @@ li a{
     cursor: pointer;
     margin-right: -4rem;
 }
-
+.show{
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+/*------------PresentationSection----------------*/
 .presentationSection{
     display: flex;
     flex-direction: column;
@@ -69,9 +80,6 @@ li a{
 }
 .presentationImg{
     width: 100%;
-}
-.presentationImg2{
-    visibility: hidden;
 }
 .txtPrespEduc{
     text-transform: uppercase;
@@ -91,8 +99,10 @@ li a{
     font-family: 'Inconsolata', monospace ;
     font-weight: 300;
 }
-
-
+.presentationImgDesktop{
+    display: none;
+}
+/*------------ResumeSection----------------*/
 .resumeSection{
     background-color: #FFFFFF;
     color: #000000;
@@ -108,11 +118,15 @@ li a{
     font-weight: 600;
     padding: 0 0 1rem 0;
 }
-.abputUsSection{
+/*------------AboutUsSection----------------*/
+.aboutUsSection{
     padding: 1rem 1.5rem;
 }
 .aboutUsImg{
     width: 100%;
+}
+.aboutUsImgDesktop{
+    display: none;
 }
 .titAboutUsSection{
     font-family: 'Basement Grotesque';
@@ -121,14 +135,15 @@ li a{
     text-align: right;
     padding: 1rem 0;
 }
-h3 span {
+.titAboutUsSection,
+.titAboutUsSection span  {
     display: block;
 }
 .txtAboutUsSection{
     font-family: 'Inconsolata', monospace ;
     font-weight: 300;
 }
-
+/*------------WorkWithSection----------------*/
 .instWorkWith{
     background-color: #FFFFFF;
     padding: 1rem 4rem;
@@ -144,16 +159,16 @@ h3 span {
     width: 100%;
     padding: .5rem 0;
 }
+/*------------ServicesSection----------------*/
 .titServiceSection {
-        transform: rotate(-90deg);
-        text-align: center;
-        display: block;
-        margin-top: 4rem;
-        margin-left: -2.5rem;
-        font-size: 25px;
-        font-family: 'Basement Grotesque';  
+    transform: rotate(-90deg);
+    text-align: center;
+    display: block;
+    margin-top: 4rem;
+    margin-left: -2.5rem;
+    font-size: 25px;
+    font-family: 'Basement Grotesque';  
 
-      
 }
 .encServiceSection{
     display: flex;
@@ -162,7 +177,8 @@ h3 span {
 
 }
 .imgServiceSection {
-    width: 115%;
+    width: 110%;
+    position: relative;
     margin-left: -2.5rem;
 }
 .serviceSection{
@@ -182,7 +198,7 @@ h3 span {
     font-weight: 800;
     margin-bottom: .5rem;
 }
-
+/*------------ContactUsSection----------------*/
 .contactUs{
     background-color: #FFFFFF;
     padding: 1rem;
@@ -226,7 +242,7 @@ form{
     width: 20%;
     font-family: 'Inconsolata', monospace ;
 }
-
+/*------------Footer----------------*/
 footer{
     display: flex;
     flex-direction: column;
@@ -236,104 +252,120 @@ footer{
     width: 100%;
     padding: 2rem 6rem;
 }
-.copyFooter{
-    padding: 2rem;
+.copyFooter,
+.copyFooter span{
+    padding: 2rem 1rem;
     text-align: center;
-    border-top: 1px solid white;
     font-family: 'Inconsolata', monospace ;
+    font-size: .9rem;
     font-weight: 300;
 }
+.copyFooter{
+    border-top: 1px solid white;
+}
+.navFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.itemLinkFooter{
+    list-style-type: none;
+}
+.itemLinkFooter a{
+    color: #FFFFFF;
+    font-size: 1rem;
+}
 
-/*------------------------------- RESPONSIVE -------------------------------*/
 
-@media screen and (min-width: 600px) {
+/*------------RESPONSIVE----------------*/
+@media screen and (min-width: 1024px) {
     header{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: left;
-        width: 5vw;
-        height: 85vh;
+        width: 7vw;
+        height: 100vh;
         position: absolute;
+        padding: .5rem;
+        position: fixed;
     }
     .imgLogoNav{
-        width: 7rem;
+        width: 6.5rem;
     }
-    nav{
-        background-color: rgb(91, 91, 91); /*para diferenciar*/
-        justify-content: space-between;
+    .navHeader{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
 
     }
-    ul{
+    .menuHeader{
         display: flex;
-        flex-direction: row;
-        width: 5vw;
-        height: 85vh;
+        flex-direction: column;
+        width: 7vw;
         text-align: center;
-        display: block;
         background-color: transparent;     
         list-style-type: none;
         position: relative;
-        margin-right: 0;
         transition: none;
         transform: translateX(0);
-        z-index: 10;
+        margin: 0 auto;
     }
-    li a{
+    .itemLink a{
         text-decoration: none;
         color: #FFFFFF;
-        font-size: 1rem;
+        font-size: 1.1rem;
         transform: rotate(-90deg);
         display: block;
-        position: relative;
-        margin: 50% 0;
     }
     .navHamb{
-        visibility: hidden;
+        display: none;
     }
-
-
-    
+    /*------------PresentationSection----------------*/
     .presentationSection{
+        display: flex;
         flex-direction: row;
-        justify-content: none;
-        align-content: none;
-        padding: 1rem 1.5rem;
-        margin-left: 5%;
+        justify-content: space-around;
+        align-content: center;
+        padding: 5rem 6rem;
+        margin-left: 7vw;
         height: 100vh;
     }
     .presentationImg{
-        width: 100%;
+        display: none;
     }
-    .presentationImg2{
-        visibility:visible;
-        width: 100%;
+    .txtPresentacionSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .txtPrespEduc{
-        text-transform: uppercase;
-        color: #4BBFB2;
-        font-family: 'Basement Grotesque';
-        margin-top: 1rem;
+        font-size: 3rem;
+        font-weight: 900;
+        margin-top: 0;
     }
     .txtDigital{
-        text-transform: uppercase;
-        color: #FFFFFF;
-        text-align: right;
-        font-family: 'Basement Grotesque';
-        margin-top: 1rem;
+        text-align: left;
+        font-size: 3rem;
+        font-weight: 900;
+        margin-top: .5rem;
     }
     .txtPresentation{
-        padding: .5rem;
-        font-family: 'Inconsolata', monospace ;
-        font-weight: 300;
+        padding: 0;
+        margin-top: 2rem;
     }
-
-
+    .presentationImgDesktop{
+        display:block;
+        width: 100%;
+    }
+    /*------------ResumeSection----------------*/
     .resumeSection{
         display: flex;
         flex-direction: row;
-        margin-left: 5%;
+        padding: 1.5rem;
+        margin-left: 7vw;
     }
     .resSection{
         padding: 2rem;
@@ -343,21 +375,164 @@ footer{
     .noBorder{
         border: none;
     }
-
-
-    .abputUsSection{
-        padding: 2rem;
-        margin-left: 5%;
+    /*------------AboutUsSection----------------*/
+    .aboutUsSection{
+        padding: 3rem 6rem;
+        margin-left: 7vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
     }
     .aboutUsImg{
-        width: 30%;
+        display: none;        
+    }
+    .conttxtAboutUsSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .aboutUsImgDesktop{
+        display: block;
+        width: 100%;
     }
     .titAboutUsSection{
-        text-align: right;
-        padding: 1rem 0;
+        font-size: 3rem;
+        font-weight: 900;
+        padding: 0;
+        margin-bottom: 2rem;
     }
-    h3 span {
-        display: block;
+    /*------------WorkWithSection----------------*/
+    .instWorkWith{
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 7vw;
     }
-
+    .titInstWorkWith{
+        font-size: 1.8rem;
+        padding: .5rem;
+        width: 30%;
+    }
+    .logoInstWorkWith{
+        width: 90%;
+        padding: 0 .5rem;
+        margin: 0 auto;
+    }
+    /*------------ServicesSection----------------*/
+    .serviceSection{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 1.5rem;
+        margin-left: 7vw;
+    }
+    .titServiceSection {
+        margin-top: -8rem;
+        margin-left: -3rem;
+        font-size: 2rem;
+    }
+    .encServiceSection{
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        width: 125vw;
+        height: 100vh;
+    }
+    /* .imgServiceSection{
+        width: 130%;
+    } */
+    .description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 8rem 5rem;
+    }
+    .descriptionsemisection{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-around;
+        align-items: center;
+    }
+    .serviceSection{
+        padding: 1rem;
+    }
+    .descriptionInd{
+        padding: 1rem 2rem;
+        margin: 0 1rem;
+    }
+    .titDescriptionInd{
+        font-weight: 800;
+        margin-bottom: 0;
+    }
+    /*------------ContactUsSection----------------*/
+    .contactUs{
+        padding: 4rem 6rem;
+        display: flex;
+        flex-direction: row;
+        margin-left: 7vw;
+    }
+    .txtContactUsSectionCont{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 50vw;
+    }
+    .imgContactUs{
+        padding: 2rem 2rem 2rem 0;
+    }
+    .titContactUsSection{
+        padding: 0;
+        font-size: 2rem;
+    }
+    .color{
+        color: #4BBFB2;
+    }
+    .formContactUsSection{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 10rem;
+    }
+    .textContactUsSection{
+        padding-bottom: 0;
+    }
+    .buttonForm{
+        background-color: #4BBFB2;
+        border: 1px solid #000000;
+        font-family: 'Inconsolata', monospace ;
+    }
+    /*------------Footer----------------*/
+    footer{
+        padding: 2rem 2rem 0 1rem;
+        margin-left: 7vw;
+    }
+    .footercont{
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 1rem;
+    }
+    .imgLogoFooter{
+        width: 50%;
+        padding: 0;
+    }
+    .navFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem;
+        width: 50%;
+    }
+    .itemLinkFooter{
+        list-style-type: none;
+    }
+    .itemLinkFooter a{
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
 }
