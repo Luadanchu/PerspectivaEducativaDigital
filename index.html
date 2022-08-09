@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/54a9dfe718.js"
       crossorigin="anonymous"
-    ></script>
+    ></script>  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./assets/Logo 1.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <title>Propuesta Educativa</title>
@@ -22,7 +23,7 @@
     <div class="containerGral">
       <header>
         <img class="imgLogoNav" src="./assets/logoNav.png" alt="Logo" />
-        <span class="navHamb" id="btnMenu"><i class="fa fa-bars"></i></span>
+        <span class="navHamb" id="btnMenu"><i class='bx bx-menu'></i></span>
         <nav class="navHeader">
           <ul class="menuHeader" id="menu">
             <li class="itemLink"><a href="#aboutUs">Acerca de</a></li>
@@ -37,13 +38,13 @@
           <picture>
             <img
               class="presentationImg"
-              src="./assets/fotosec1.jpg"
+              src="./assets/fotosec1mobile.jpg"
               alt="mujeroficina"
             />
           </picture>
           <div class="txtPresentacionSection">
             <h2 class="txtPrespEduc">Perspectiva<br />Educativa</h2>
-            <h2 class="txtDigital">Digital XXI</h2>
+            <h2 class="txtDigital">| Digital XXI</h2>
             <p class="txtPresentation">
             "Un cambio de paradigma en la enseñanza y aprendizaje del siglo 21"
             </p>
@@ -60,23 +61,19 @@
           <!--  seccion 2 (4 parrafos separados cons sus titulos )-->
           <div class="resSection">
             <h4 class="titResumeSection">100% Dinamicas</h4>
-            <img src="./assets/clarity_group-outline-badged.svg" alt="" srcset="">
+            <i class='bx bx-group'></i>
           </div>
           <div class="resSection">
             <h4 class="titResumeSection">+1 Mentorias</h4>
-            <img src="./assets/user (1).svg" alt="" srcset="">
+            <i class='bx bx-user'></i>
           </div>
           <div class="resSection">
             <h4 class="titResumeSection">100% Virtuales</h4>
-            <img src="./assets/ic_baseline-computer (1).svg" alt="" srcset="">
+            <i class='bx bx-laptop'></i>
           </div>
           <div class="resSection noBorder">
             <h4 class="titResumeSection">100% Flexibles</h4>
-            <img src="./assets/clock (1).svg" alt="" srcset="">
-           <!-- <p class="txtResumeSection">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              voluptatem sed architecto quis repellendus. Numquam!
-            </p>-->
+            <i class='bx bx-time-five'></i>
           </div>
         </section>
         <section class="aboutUsSection" id="aboutUs">
@@ -90,13 +87,12 @@
           </picture>
           <div class="conttxtAboutUsSection">
             <h3 class="titAboutUsSection">
-              Acerca de <span>Perspectiva</span>
+              Acerca de<span>Perspectiva</span>
             </h3>
             <p class="txtAboutUsSection">
               Nace en el 2019, como necesidad de darle una identidad a este
               proyecto educativo y digital, en donde el propósito era brindar
-              una educación digital para mejorar el aprendizaje en cualquiera de
-              los niveles.
+              una educación digital para mejorar el aprendizaje en cualquiera de los niveles.
             </p>
           </div>
           <picture>
@@ -107,26 +103,6 @@
             />
           </picture>
         </section>
-       <!--  <section class="instWorkWith">
-          seccion 4 ( titulo , 2 img)
-          <h3 class="titInstWorkWith">
-            INSTITUCIONES<br />CON LAS QUE<br />TRABAJAMOS
-          </h3>
-          <picture>
-            <img
-              class="logoInstWorkWith"
-              src="./assets/LogoCoder.png"
-              alt="LogoCoder"
-            />
-          </picture>
-          <picture>
-            <img
-              class="logoInstWorkWith"
-              src="./assets/LogoAprende.png"
-              alt="LogoAprende"
-            />
-          </picture>
-        </section> -->
         <section class="serviceSection" id="services">
           <div class="encServiceSection">
             <div><h3 class="titServiceSection">SERVICIOS</h3></div>
@@ -141,57 +117,84 @@
           <div class="description">
             <div class="descriptionsemisection">
               <div class="descriptionInd">
-                <h4 class="titDescriptionInd">Mentoría Individual</h4>
-                <p>
-                  Mentorias Individuales de Diseño Ux/Ui + desarrollo Web para
-                  el armado de Portfolio.
-                </p>
+                <h4 class="titDescriptionInd">Mentorías<br /> Individuales & grupales</h4>
+                <p class="descInd">Mentorias Individuales para armado de CV.</p>
+                <p class="descInd">Curso grupal de Metodologías Ágiles; Scrum (Nivel Inicial)</p>
               </div>
               <div class="descriptionInd">
                 <h4 class="titDescriptionInd">Portfolio</h4>
-                <p>Mentorias Individuales para armado de CV.</p>
+                <p class="descInd">Mentorias Individuales de Diseño Ux/Ui + Desarrollo Web para el armado de Portfolio</p>
               </div>
             </div>
             <div class="descriptionsemisection">
               <div class="descriptionInd">
                 <h4 class="titDescriptionInd">Seminarios</h4>
-                <p>
-                  Curso grupal de Metodologías Ágiles; Scrum (Nivel Inicial)
-                </p>
+                <p class="descInd">Charlas abiertas de una hora sobre diversos temas, como por ejemplo: Primer empleo IT, consejos de entrevistas, inglés técnico, entre otras.</p>
               </div>
               <div class="descriptionInd">
                 <h4 class="titDescriptionInd">Capacitación Docente</h4>
-                <p>
-                  Capacitaciones docentes sobre como usar distintos recursos
-                  didácticos/tecnológicos en el aula.
-                </p>
+                <p class="descInd">Capacitaciones docentes sobre como usar distintos recursos didácticos/ tecnológicos en el aula.</p>
               </div>
             </div>
           </div>
         </section>
         <section class="workUs">
-          <h4 class="titWorkUs">¡Unite a nuestro equipo!</h4>
-          <p class="pWorkUs">Si tenes ganas de sumarte, dejanos tus datos.</p>
-          <button class="buttonWorkUs">UNITE</button>
-          <div class="divImgWorkUs"><img  class="divImgWorkUs" src="./assets/group-of-business-executives.jpg" alt=""></div>
+          <div class="contTxtWorkUs">
+            <h4 class="titWorkUs">¡Unite a nuestro equipo!</h4>
+            <p class="pWorkUs">Si tenes ganas de sumarte, dejanos tus datos.</p>
+            <button class="buttonWorkUs">UNITE</button>
+          </div>
+          <picture>
+            <img  class="imgWorkUs" src="./assets/group-of-business-executives.jpg" alt="">
+          </picture>
         </section>
         <section class="studentCom">
-          <div class="divTitStudentCom"><h2 class="titStudentCom">NUESTROS ALUMNOS</h2></div>
-          <div>
-              <h4 class="nameStudentCom">MATIAS O.</h4>
-              <p class="pStudentCom">Mi primera experiencia con un curso online me tocó (por suerte!!) a Dahiana como tutora y me guió en tod el curso de una manera excelente (que hoy extraño, jaja) me acompaño siempre y estuvo atenta a que comprenda, lleve al dia todo y pude completar mi curso con una efectividad del 100%. Así que para resumir mi experiencia fue EXCELENTE!!</p>
-            </div>
-            <div>
-              <h4 class="nameStudentCom">HUMBERT F.</h4>
-              <p class="pStudentCom">Fue una experiencia muy enriquecedora donde aprendí un millón y Dahiana siempre estuvo pendiente a mi dándome las mejores herramientas, tips y explicaciones, siempre estaré agradecido.</p>
-            </div>
-            <div>
-              <h4 class="nameStudentCom">JONATAN S.</h4>
-              <p class="pStudentCom">La verdad es que mi experiencia siempre fue muy buena, siempre predispuesta, sus observaciones sobre mi entregas me ayudaron muchísim, la verdad que se nota el conocimiento, muy recomendable.</p>
-            </div>
-            <div>
-              <h4 class="nameStudentCom">JUAN U.</h4>
-              <p class="pStudentCom">Realicé un curso de Desarrollo Web en el que Dahiana fue mi tutora, solo palabras de agradecimiento, me guió de forma excepcional durante la cursada y siempre estuvo disponible para las consultas, supo darme las correcciones indicadas para mi proyecto y me inculcó buenas prácticas del desarrollo impulsándome a presentar un excelente proyecto final. La considere un bastión importanteen la cursada por su predisposición constante, los conocimientos brindados a través de textos y documentos, tutoriales y demás, para así mejroar como desarrollador web. Súper Recomendable!</p>
+          <div class="divTitStudentCom"><h2 class="titStudentCom">NUESTROS<br />ALUMNOS</h2></div>
+          <div class="contStudentCom">
+            <div class="IndStudentCom">
+                <h4 class="nameStudentCom">MATIAS O.</h4>
+                <div class="starStudentCom">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                </div>
+                <p class="pStudentCom">Mi primera experiencia con un curso online me tocó (por suerte!!) a Dahiana como tutora y me guió en tod el curso de una manera excelente (que hoy extraño, jaja) me acompaño siempre y estuvo atenta a que comprenda, lleve al dia todo y pude completar mi curso con una efectividad del 100%. Así que para resumir mi experiencia fue EXCELENTE!!</p>
+              </div>
+              <div class="IndStudentCom">
+                <h4 class="nameStudentCom">HUMBERT F.</h4>
+                <div class="starStudentCom">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                </div>
+                <p class="pStudentCom">Fue una experiencia muy enriquecedora donde aprendí un millón y Dahiana siempre estuvo pendiente a mi dándome las mejores herramientas, tips y explicaciones, siempre estaré agradecido.</p>
+              </div>
+              <div class="IndStudentCom">
+                <h4 class="nameStudentCom">JONATAN S.</h4>
+                <div class="starStudentCom">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                </div>
+                <p class="pStudentCom">La verdad es que mi experiencia siempre fue muy buena, siempre predispuesta, sus observaciones sobre mi entregas me ayudaron muchísim, la verdad que se nota el conocimiento, muy recomendable.</p>
+              </div>
+              <div class="IndStudentCom">
+                <h4 class="nameStudentCom">JUAN U.</h4>
+                <div class="starStudentCom">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                </div>
+                <p class="pStudentCom">Realicé un curso de Desarrollo Web en el que Dahiana fue mi tutora, solo palabras de agradecimiento, me guió de forma excepcional durante la cursada y siempre estuvo disponible para las consultas, supo darme las correcciones indicadas para mi proyecto y me inculcó buenas prácticas del desarrollo impulsándome a presentar un excelente proyecto final. La considere un bastión importanteen la cursada por su predisposición constante, los conocimientos brindados a través de textos y documentos, tutoriales y demás, para así mejroar como desarrollador web. Súper Recomendable!</p>
+              </div>
             </div>
           </div>
         </section>
@@ -217,7 +220,7 @@
             <form action="">
               <input class="inputForm" type="text" placeholder="Nombre" />
               <input class="inputForm" type="email" placeholder="Correo" />
-              <input class="inputForm" type="text" placeholder="Mensaje" />
+              <input class="inputForm message" type="text" placeholder="Mensaje" />
               <input class="buttonForm" type="submit" value="ENVIAR" />
             </form>
           </div>
