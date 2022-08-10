@@ -386,6 +386,7 @@ footer{
     text-decoration: none;
     color: #FFFFFF;
     font-size: 1rem;
+    font-family: 'Inconsolata', monospace ;
 }
 
 
@@ -400,18 +401,24 @@ footer{
         height: 100vh;
         position: absolute;
         padding: .5rem;
-        position: fixed;
+        position: block;
     }
     .imgLogoNav{
         width: 10rem;
         position: absolute;
         left: 1px;
+        z-index: 10;
     }
     .navHeader{ 
+        background-color: #000000;
+        width: 7vw;
+        height: 100vh;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        position: fixed;
+        top: 0;
 
     }
     .menuHeader{
@@ -606,6 +613,7 @@ footer{
     .buttonWorkUs {
         align-self: flex-end;
         margin: 4rem 0 2rem 0;
+        cursor: pointer;
     }
 
     /*------------studentComSection----------------*/
@@ -658,6 +666,7 @@ footer{
         background-color: #4BBFB2;
         border: 1px solid #000000;
         font-family: 'Inconsolata', monospace ;
+        cursor: pointer;
     }
     /*------------Footer----------------*/
     footer{
@@ -670,7 +679,7 @@ footer{
         padding: 2rem 1rem;
     }
     .imgLogoFooter{
-        width: 50%;
+        width: 40%;
         padding: 0;
     }
     .navFooter{
