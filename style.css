@@ -420,6 +420,11 @@ footer{
 
 
 /*------------RESPONSIVE----------------*/
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+    .presentationSection{
+        margin-left: 19vh;
+    }
+}
 
 @media screen and (min-width: 1024px) {
     header{
