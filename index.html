@@ -11,8 +11,12 @@
       rel="stylesheet"
     />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<<<<<<< HEAD
     <link rel="shortcut icon" href="./assets/Logo 1.svg" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+=======
+    <link rel="shortcut icon" href="./assets/logoNav.png" type="image/x-icon" />
+>>>>>>> f25bb5b8acaf96ec19c91a290caece076baeb61b
     <link rel="stylesheet" href="./style.css" />
     <meta name="description" content="Sitio dedicado a mentorias de CV y cursos digitales">
     <meta name="keywords" content="mentorias, cv, linkedIn,scrum,proyectos freelancer, diseño, ux, ui">
@@ -31,6 +35,7 @@
           </ul>
         </nav>
       </header>
+      <div><a href="https://api.whatsapp.com/send?phone=5491123250742&text=Hola!%20Estoy%20en%20la%20web%20de%20Perspectiva%20Educativa!" Target="_blank"><i class='bx bxl-whatsapp'></i></a></div>
       <main>
         <section class="presentationSection">
           <!-- 1 seccion (foto, titulo, p) -->
@@ -141,7 +146,7 @@
           <div class="contTxtWorkUs">
             <h4 class="titWorkUs">¡Unite a nuestro equipo!</h4>
             <p class="pWorkUs">Si tenes ganas de sumarte, dejanos tus datos.</p>
-            <button class="buttonWorkUs">UNITE</button>
+            <button class="buttonWorkUs"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdyXkGgVYMekzsLoMgWW_Q4RVYXH6Jl-hjZw8ONKCOz2YrgZw/viewform" Target="_blank">UNITE</a></button>
           </div>
           <picture>
             <img  class="imgWorkUs" src="./assets/group-of-business-executives.jpg" alt="">
@@ -216,10 +221,10 @@
             <p class="textContactUsSection">
               Si tenes alguna duda/consulta por favor envíanos un mensaje y en breve nos comunicaremos
             </p>
-            <form action="">
-              <input class="inputForm" type="text" placeholder="Nombre" />
-              <input class="inputForm" type="email" placeholder="Correo" />
-              <input class="inputForm message" type="text" placeholder="Mensaje" />
+            <form action="https://formspree.io/f/xyyvyyrj" method="POST">
+              <input class="inputForm" type="text" name="nombre" placeholder="Nombre" required />
+              <input class="inputForm" type="email" name="email" placeholder="Correo" required />
+              <input class="inputForm message" type="text" name="message" placeholder="Mensaje" required />
               <input class="buttonForm" type="submit" value="ENVIAR" />
             </form>
           </div>
