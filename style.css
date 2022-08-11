@@ -73,15 +73,6 @@ header{
     transform: translateX(-.5%);
     transition: all 0.5s;
 }
-.bxl-whatsapp{
-    -webkit-text-fill-color: #25D366;
-    -webkit-text-stroke: .5px #000000;
-    font-size: 3rem;
-    position: fixed;
-    left: 85vw;
-    top: 85vh;
-    z-index: 10;
-}
 
 /*------------PresentationSection----------------*/
 .presentationSection{
@@ -500,7 +491,6 @@ footer{
         justify-content: space-around;
         align-content: center;
         padding: 5rem 6rem;
-        margin-left: 7vw;
         height: 100vh;
     }
     .presentationImg{
@@ -663,7 +653,7 @@ footer{
     .buttonWorkUs {
         align-self: flex-end;
         margin: 4rem 0 2rem 0;
-        border: 1px solid #000000;
+        border: 0px solid #000000;
         cursor: pointer;
     }
 
@@ -714,12 +704,7 @@ footer{
     .textContactUsSection{
         padding-bottom: 0;
     }
-    .buttonForm{
-        background-color: #4BBFB2;
-        border: 1px solid #000000;
-        font-family: 'Inconsolata', monospace ;
-        cursor: pointer;
-    }
+    
     /*------------Footer----------------*/
     footer{
         padding: 2rem 2rem 0 1rem;
