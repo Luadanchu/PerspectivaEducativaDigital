@@ -1,31 +1,36 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: 'Basement Grotesque';
     src:
-    url(./font/BasementGrotesque-Black_v1.202.woff),
-    url(./font/BasementGrotesque-Black_v1.202.woff2);
+        url(./font/BasementGrotesque-Black_v1.202.woff),
+        url(./font/BasementGrotesque-Black_v1.202.woff2);
 }
-.containerGral{
+
+.containerGral {
     width: 100%;
     background-color: #000000;
     color: #FFFFFF;
     overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
     width: 0.5rem;
     margin: 0;
     background-color: #000000;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #4BBFB2;
     border-radius: 0.5rem;
     border-right: solid #000000 1px;
 }
-header{
+
+header {
     background-color: #000000;
     width: 100%;
     display: flex;
@@ -34,11 +39,13 @@ header{
     position: fixed;
     z-index: 10;
 }
-.imgLogoNav{
+
+.imgLogoNav {
     width: 10rem;
     padding: 1rem;
 }
-.menuHeader{
+
+.menuHeader {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -53,15 +60,17 @@ header{
     transform: translateX(-200%);
     transition: all 0.5s;
 }
-.itemLink a{
+
+.itemLink a {
     display: block;
     text-decoration: none;
     color: #000000;
     font-size: 2rem;
     font-weight: 600;
-    font-family: 'Inconsolata', monospace ;
+    font-family: 'Inconsolata', monospace;
 }
-.navHamb{
+
+.navHamb {
     color: #ffffff;
     font-size: 2.8rem;
     display: block;
@@ -69,13 +78,14 @@ header{
     margin-right: -8rem;
     padding-top: .5rem;
 }
-.show{
+
+.show {
     transform: translateX(-.5%);
     transition: all 0.5s;
 }
 
 /*------------PresentationSection----------------*/
-.presentationSection{
+.presentationSection {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -83,10 +93,12 @@ header{
     height: 100vh;
     padding: 3rem 1.5rem;
 }
-.presentationImg{
+
+.presentationImg {
     width: 100%;
 }
-.txtPrespEduc{
+
+.txtPrespEduc {
     text-transform: uppercase;
     font-family: 'Basement Grotesque';
     margin-top: 1rem;
@@ -94,7 +106,8 @@ header{
     -webkit-text-stroke: 1px #4BBFB2;
     -webkit-text-fill-color: #00000000;
 }
-.txtDigital{
+
+.txtDigital {
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: right;
@@ -102,58 +115,68 @@ header{
     margin-top: 1rem;
     font-size: 1.6rem;
 }
-.txtPresentation{
+
+.txtPresentation {
     padding: 2rem 1rem 1rem 0;
     font-size: 1.2rem;
-    font-family: 'Inconsolata', monospace ;
+    font-family: 'Inconsolata', monospace;
     font-weight: 500;
 }
-.presentationImgDesktop{
+
+.presentationImgDesktop {
     display: none;
 }
+
 /*------------ResumeSection----------------*/
-.resumeSection{
+.resumeSection {
     background-color: #FFFFFF;
     color: #000000;
     padding: 2rem 0;
-    font-family:'Inconsolata', monospace ;
+    font-family: 'Inconsolata', monospace;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
 }
-.resSection{
+
+.resSection {
     padding: 1.5rem 0;
     border-bottom: 1.5px solid #4BBFB2;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.titResumeSection{
+
+.titResumeSection {
     font-size: 1.2rem;
     font-weight: 600;
     padding-bottom: 1rem;
 }
+
 .bx-group,
 .bx-user,
 .bx-laptop,
-.bx-time-five{
+.bx-time-five {
     color: #4BBFB2;
     font-size: 6rem;
     padding-top: 1rem;
 }
+
 /*------------AboutUsSection----------------*/
-.aboutUsSection{
+.aboutUsSection {
     padding: 1rem 1.5rem 3rem 1.5rem;
 }
-.aboutUsImg{
+
+.aboutUsImg {
     width: 100%;
 }
-.aboutUsImgDesktop{
+
+.aboutUsImgDesktop {
     display: none;
 }
-.titAboutUsSection{
+
+.titAboutUsSection {
     font-family: 'Basement Grotesque';
     text-transform: uppercase;
     color: #4BBFB2;
@@ -161,15 +184,18 @@ header{
     text-align: right;
     padding: 1rem 0;
 }
+
 .titAboutUsSection,
-.titAboutUsSection span  {
+.titAboutUsSection span {
     display: block;
 }
-.txtAboutUsSection{
-    font-family: 'Inconsolata', monospace ;
+
+.txtAboutUsSection {
+    font-family: 'Inconsolata', monospace;
     font-size: 1.15rem;
     font-weight: 300;
 }
+
 /*------------ServicesSection----------------*/
 .titServiceSection {
     transform: rotate(-90deg);
@@ -178,46 +204,53 @@ header{
     margin-top: 4rem;
     margin-left: -2.5rem;
     font-size: 25px;
-    font-family: 'Basement Grotesque';  
+    font-family: 'Basement Grotesque';
 
 }
-.encServiceSection{
+
+.encServiceSection {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
 
 }
+
 .imgServiceSection {
     width: 110%;
     position: relative;
     margin-left: -2.5rem;
 }
-.serviceSection{
+
+.serviceSection {
     background-color: #4BBFB2;
     padding: 1rem;
 }
-.description{
+
+.description {
     padding: 1rem 2rem;
 }
-.descriptionInd{
+
+.descriptionInd {
     background-color: #FFFFFF;
     padding: 1.5rem 2rem;
     margin: 2rem 0;
     color: #000000;
-    font-family: 'Inconsolata', monospace ;
+    font-family: 'Inconsolata', monospace;
 }
-.titDescriptionInd{
+
+.titDescriptionInd {
     font-weight: 900;
     font-size: 1.15rem;
     margin-bottom: .5rem;
 }
-.descInd{
+
+.descInd {
     font-size: 1.1rem;
-    font-family: 'Inconsolata', monospace ;
+    font-family: 'Inconsolata', monospace;
 }
 
 /*------------WorkUsSection----------------*/
-.workUs{
+.workUs {
     background-color: #FFFFFF;
     text-align: center;
     display: flex;
@@ -227,22 +260,26 @@ header{
     align-items: center;
     padding: 2rem;
 }
-.titWorkUs{
+
+.titWorkUs {
     color: #000000;
     font-family: 'Basement Grotesque';
     font-size: 2rem;
     font-weight: 900;
     padding: 1rem 0;
 }
-.pWorkUs{
+
+.pWorkUs {
     font-size: 1.4rem;
     color: #000000;
-    font-family: 'Inconsolata', monospace ;
+    font-family: 'Inconsolata', monospace;
     text-align: left;
 }
-.imgWorkUs{
+
+.imgWorkUs {
     width: 100%;
 }
+
 .buttonWorkUs {
     font-size: 1rem;
     align-self: flex-end;
@@ -252,14 +289,15 @@ header{
     border: 1px solid #4BBFB2;
     font-family: 'Basement Grotesque'
 }
-.buttonWorkUs a{
+
+.buttonWorkUs a {
     text-decoration: none;
     color: #000000;
 }
 
 
 /*------------studentComSection----------------*/
-.studentCom{
+.studentCom {
     background-color: #000000;
     display: flex;
     flex-direction: column;
@@ -268,107 +306,122 @@ header{
     align-items: center;
     padding: 4rem 2rem;
 }
-.divTitStudentCom{
+
+.divTitStudentCom {
     background-color: #4BBFB2;
     padding: 0 0.5rem;
     align-self: flex-end;
     height: 3rem;
     margin-bottom: 2rem;
 }
-.titStudentCom{
+
+.titStudentCom {
     color: #FFFFFF;
     font-size: 2rem;
     font-family: 'Basement Grotesque';
 }
-.nameStudentCom{
+
+.nameStudentCom {
     font-size: 1.7rem;
     margin-top: 2rem;
     font-weight: 600;
     text-align: center;
     font-family: 'Inconsolata', monospace;
 }
-.starStudentCom{
+
+.starStudentCom {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 1rem 0;
 }
 
-.bxs-star{
+.bxs-star {
     color: #ffff00;
     font-size: 1.5rem;
 }
-.pStudentCom{
+
+.pStudentCom {
     text-align: justify;
-    font-family: 'Inconsolata', monospace;  
+    font-family: 'Inconsolata', monospace;
     padding: 2rem 1rem;
 }
 
 /*--------------whatsaap icon --------------*/
-.btn-wsp{
-    position:fixed;
-    width:60px;
-    height:60px;
+.btn-wsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
     line-height: 63px;
-    bottom:25px;
-    right:25px;
+    bottom: 25px;
+    right: 25px;
     background: #00bb2d;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:35px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-    z-index:100;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
     transition: all 300ms ease;
 }
-.btn-wsp:hover{
+
+.btn-wsp:hover {
     color: #00bb2d;
     background: #FFF;
 }
 
 /*------------ContactUsSection----------------*/
-.contactUs{
+.contactUs {
     background-color: #FFFFFF;
     padding: 1rem;
     color: #000000;
 }
-.imgContactUs{
+
+.imgContactUs {
     width: 100%;
 }
-.titContactUsSection{
+
+.titContactUsSection {
     padding: 1rem 0;
     font-family: 'Basement Grotesque';
     font-size: 25px;
 }
-.color{
+
+.color {
     color: #4BBFB2;
 }
-.textContactUsSection{
+
+.textContactUsSection {
     font-size: 1.2rem;
     padding-bottom: 1rem;
-    font-family: 'Inconsolata', monospace ;
+    font-family: 'Inconsolata', monospace;
     font-weight: 400;
-    
+
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
 }
-.inputForm{
+
+.inputForm {
     border: none;
     border-bottom: 1px solid black;
     padding: 1.5rem 0 .2rem 1rem;
-    font-family: 'Inconsolata', monospace ;
+    font-family: 'Inconsolata', monospace;
     font-size: 1.1rem;
     font-weight: 300;
 }
-.message{
+
+.message {
     height: 4rem;
 }
-::placeholder{
+
+::placeholder {
     color: #000000;
 }
-.buttonForm{
+
+.buttonForm {
     margin-top: 2rem;
     align-self: center;
     font-size: 1rem;
@@ -379,55 +432,62 @@ form{
     font-family: 'Basement Grotesque';
     cursor: pointer;
 }
+
 /*------------Footer----------------*/
-footer{
+footer {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     background-color: #000000;
 }
-.imgLogoFooter{
+
+.imgLogoFooter {
     width: 100%;
     padding: 2rem 6rem;
 }
+
 .copyFooter,
-.copyFooter span{
+.copyFooter span {
     padding: 2rem 1rem;
     text-align: center;
-    font-family: 'Inconsolata', monospace ;
+    font-family: 'Inconsolata', monospace;
     font-size: .9rem;
     font-weight: 300;
 }
-.copyFooter{
+
+.copyFooter {
     border-top: 1px solid white;
     color: #FFFFFF;
 }
-.navFooter{
+
+.navFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 1rem;
 }
-.itemLinkFooter{
+
+.itemLinkFooter {
     list-style-type: none;
 }
-.itemLinkFooter a{
+
+.itemLinkFooter a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 1rem;
-    font-family: 'Inconsolata', monospace ;
+    font-family: 'Inconsolata', monospace;
 }
 
 
 /*------------RESPONSIVE----------------*/
-@media only screen and (min-width: 1000px) and (max-width: 1200px){
-    .presentationSection{
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    .presentationSection {
         margin-left: 19vh;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    header{
+    header {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -438,13 +498,15 @@ footer{
         padding: .5rem;
         position: block;
     }
-    .imgLogoNav{
+
+    .imgLogoNav {
         width: 10rem;
         position: absolute;
         left: 1px;
         z-index: 10;
     }
-    .navHeader{ 
+
+    .navHeader {
         background-color: #000000;
         width: 7vw;
         height: 100vh;
@@ -456,19 +518,21 @@ footer{
         top: 0;
 
     }
-    .menuHeader{
+
+    .menuHeader {
         display: flex;
         flex-direction: column;
         width: 7vw;
         text-align: center;
-        background-color: transparent;     
+        background-color: transparent;
         list-style-type: none;
         position: relative;
         transition: none;
         transform: translateX(0);
         margin: 0 auto;
     }
-    .itemLink a{
+
+    .itemLink a {
         text-decoration: none;
         color: #FFFFFF;
         font-size: 1.1rem;
@@ -476,10 +540,12 @@ footer{
         font-weight: 500;
         display: block;
     }
-    .navHamb{
+
+    .navHamb {
         display: none;
     }
-    .bxl-whatsapp{
+
+    .bxl-whatsapp {
         /* color: #25D366; */
         -webkit-text-fill-color: #25D366;
         -webkit-text-stroke: .5px #000000;
@@ -489,8 +555,9 @@ footer{
         top: 85vh;
         z-index: 10;
     }
+
     /*------------PresentationSection----------------*/
-    .presentationSection{
+    .presentationSection {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -498,10 +565,12 @@ footer{
         padding: 5rem 6rem;
         height: 100vh;
     }
-    .presentationImg{
+
+    .presentationImg {
         display: none;
     }
-    .txtPresentacionSection{
+
+    .txtPresentacionSection {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -509,48 +578,56 @@ footer{
         margin-left: -28rem;
         z-index: 10;
     }
-    .txtPrespEduc{
+
+    .txtPrespEduc {
         font-size: 3.8rem;
         font-weight: 900;
         margin-top: 0;
         letter-spacing: .3rem;
     }
-    .txtDigital{
+
+    .txtDigital {
         text-align: left;
         font-size: 3rem;
         font-weight: 900;
         margin-top: .5rem;
         letter-spacing: .3rem;
     }
-    .txtPresentation{
+
+    .txtPresentation {
         padding: 0;
         margin-top: 2rem;
         width: 49%;
     }
-    .presentationImgDesktop{
+
+    .presentationImgDesktop {
         display: block;
         width: 50%;
         position: absolute;
         left: 45%;
     }
+
     /*------------ResumeSection----------------*/
-    .resumeSection{
+    .resumeSection {
         display: flex;
         flex-direction: row;
         padding: 1.5rem;
         margin-left: 7vw;
     }
-    .resSection{
+
+    .resSection {
         padding: 2rem;
         width: 25%;
         border-bottom: none;
         border-right: 2px solid #4BBFB2;
     }
-    .noBorder{
+
+    .noBorder {
         border: none;
     }
+
     /*------------AboutUsSection----------------*/
-    .aboutUsSection{
+    .aboutUsSection {
         padding: 3rem 6rem;
         margin-left: 7vw;
         margin-bottom: 3rem;
@@ -560,10 +637,12 @@ footer{
         justify-content: space-around;
         align-content: center;
     }
-    .aboutUsImg{
-        display: none;        
+
+    .aboutUsImg {
+        display: none;
     }
-    .conttxtAboutUsSection{
+
+    .conttxtAboutUsSection {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -572,89 +651,106 @@ footer{
         width: 30vw;
         z-index: 10;
     }
-    .aboutUsImgDesktop{
+
+    .aboutUsImgDesktop {
         display: block;
         width: 40%;
         position: absolute;
         left: 50%;
     }
-    .titAboutUsSection{
+
+    .titAboutUsSection {
         font-size: 3.2rem;
         font-weight: 900;
         padding: 0;
         margin-bottom: 2rem;
     }
-    .txtAboutUsSection{
+
+    .txtAboutUsSection {
         width: 80%;
         margin-left: 3rem;
     }
+
     /*------------ServicesSection----------------*/
-    .serviceSection{
+    .serviceSection {
         display: flex;
         flex-direction: row;
         padding: 1rem 1.5rem;
         margin-left: 7vw;
     }
+
     .titServiceSection {
         margin-top: -12rem;
         margin-left: -3rem;
         font-size: 2rem;
     }
-    .encServiceSection{
+
+    .encServiceSection {
         display: flex;
         align-items: center;
         margin-top: 0;
         width: 130vw;
         height: 100vh;
     }
-    .imgServiceSection{
+
+    .imgServiceSection {
         width: 100%;
     }
-    .description{
+
+    .description {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         padding: 8rem 5rem;
     }
-    .descriptionsemisection{
+
+    .descriptionsemisection {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-content: space-around;
         align-items: center;
     }
-    .serviceSection{
+
+    .serviceSection {
         padding: 1rem;
     }
-    .descriptionInd{
+
+    .descriptionInd {
         padding: 1rem 2rem;
         margin: 0 1rem;
         width: 50%;
     }
-    .titDescriptionInd{
+
+    .titDescriptionInd {
         font-weight: 800;
         margin-bottom: 0;
     }
 
     /*------------WorkUsSection----------------*/
-    .workUs{
+    .workUs {
         flex-direction: row;
         padding: 4rem 5rem;
         margin-left: 7vw;
     }
-    .contTxtWorkUs{
+
+    .contTxtWorkUs {
         width: 70vw;
     }
-    .titWorkUs{
+
+    .titWorkUs {
         font-size: 2.4rem;
     }
-    .pWorkUs{
+
+    .pWorkUs {
         font-size: 1.8rem;
     }
-    .imgWorkUs{
+
+    .imgWorkUs {
         width: 50%;
     }
+
     .buttonWorkUs {
         align-self: flex-end;
         margin: 4rem 0 2rem 0;
@@ -663,78 +759,90 @@ footer{
     }
 
     /*------------studentComSection----------------*/
-    .studentCom{
+    .studentCom {
         padding: 4rem 6rem;
         margin-left: 7vw;
     }
-    .contStudentCom{
+
+    .contStudentCom {
         display: flex;
         flex-direction: row;
     }
-    .IndStudentCom{
+
+    .IndStudentCom {
         width: 20vw;
         padding: 1.2rem;
     }
 
     /*------------ContactUsSection----------------*/
-    .contactUs{
+    .contactUs {
         padding: 4rem 6rem;
         display: flex;
         flex-direction: row;
         margin-left: 7vw;
     }
-    .txtContactUsSectionCont{
+
+    .txtContactUsSectionCont {
         display: flex;
         flex-direction: column-reverse;
         width: 50vw;
     }
-    .imgContactUs{
+
+    .imgContactUs {
         padding: 2rem 2rem 2rem 0;
     }
-    .titContactUsSection{
+
+    .titContactUsSection {
         padding: 0;
         font-size: 2rem;
     }
-    .color{
+
+    .color {
         color: #4BBFB2;
     }
-    .formContactUsSection{
+
+    .formContactUsSection {
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         padding-top: 10rem;
     }
-    
-    .textContactUsSection{
+
+    .textContactUsSection {
         padding-bottom: 0;
     }
-    
+
     /*------------Footer----------------*/
-    footer{
+    footer {
         padding: 2rem 2rem 0 1rem;
         margin-left: 7vw;
     }
-    .footercont{
+
+    .footercont {
         display: flex;
         flex-direction: row;
         padding: 2rem 1rem;
     }
-    .imgLogoFooter{
+
+    .imgLogoFooter {
         width: 40%;
         padding: 0;
     }
-    .navFooter{
+
+    .navFooter {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         padding: 1rem;
         width: 50%;
     }
-    .itemLinkFooter{
+
+    .itemLinkFooter {
         list-style-type: none;
     }
-    .itemLinkFooter a{
+
+    .itemLinkFooter a {
         text-decoration: none;
         font-size: 1.2rem;
         padding: 1rem;
