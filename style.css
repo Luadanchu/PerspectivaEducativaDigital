@@ -545,16 +545,7 @@ footer {
         display: none;
     }
 
-    .bxl-whatsapp {
-        /* color: #25D366; */
-        -webkit-text-fill-color: #25D366;
-        -webkit-text-stroke: .5px #000000;
-        font-size: 5rem;
-        position: fixed;
-        left: 92vw;
-        top: 85vh;
-        z-index: 10;
-    }
+    
 
     /*------------PresentationSection----------------*/
     .presentationSection {
@@ -761,9 +752,11 @@ footer {
     /*------------studentComSection----------------*/
     .studentCom {
         padding: 4rem 6rem;
-        margin-left: 7vw;
     }
-
+    .pStudentCom{
+        padding: 0%;
+        text-align: center;
+    }
     .contStudentCom {
         display: flex;
         flex-direction: row;
