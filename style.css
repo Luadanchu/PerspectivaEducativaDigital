@@ -358,12 +358,12 @@ header {
     padding: 2rem 1rem;
 }
 
-/*--------------whatsaap icon --------------*/
+/*--------------whatsapp icon --------------*/
 .btn-wsp {
     position: fixed;
     width: 4rem;
     height: 4rem;
-    line-height: 4.5rem;
+    line-height: 4.6rem;
     bottom: 25px;
     right: 25px;
     background: #00bb2d;
